@@ -243,7 +243,7 @@ Vagrant.configure("2") do |config|
   ##########
 
   # Provision Composer
-  # config.vm.provision "shell", path: "https://raw.github.com/#{github_username}/#{github_repo}/#{github_branch}/scripts/composer.sh", privileged: false, args: composer_packages.join(" ")
+  config.vm.provision "shell", path: "https://raw.github.com/#{github_username}/#{github_repo}/#{github_branch}/scripts/composer.sh", privileged: false, args: composer_packages.join(" ")
 
   # Provision Laravel
   config.vm.provision "shell", path: "https://raw.github.com/#{github_username}/#{github_repo}/#{github_branch}/scripts/laravel.sh", args: [server_ip, laravel_root_folder, public_folder]
@@ -258,7 +258,7 @@ Vagrant.configure("2") do |config|
   # config.vm.provision "shell", path: "https://raw.github.com/#{github_username}/#{github_repo}/#{github_branch}/scripts/mailcatcher.sh"
 
   # Install git-ftp
-  config.vm.provision "shell", path: "https://raw.github.com/#{github_username}/#{github_repo}/#{github_branch}/scripts/git-ftp.sh", privileged: false
+  # config.vm.provision "shell", path: "https://raw.github.com/#{github_username}/#{github_repo}/#{github_branch}/scripts/git-ftp.sh", privileged: false
 
   ####
   # Local Scripts

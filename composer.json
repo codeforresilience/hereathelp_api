@@ -4,7 +4,10 @@
 	"keywords": ["framework", "laravel"],
 	"license": "MIT",
 	"require": {
-		"laravel/framework": "4.1.*"
+		"laravel/framework": "4.1.*",
+        "barryvdh/laravel-ide-helper": "dev-master",
+        "intouch/laravel-newrelic": "*",
+        "toin0u/geocoder-laravel": "0.2.*@dev"
 	},
 	"autoload": {
 		"classmap": [
@@ -21,10 +24,11 @@
 			"php artisan clear-compiled",
 			"php artisan optimize"
 		],
-		"post-update-cmd": [
-			"php artisan clear-compiled",
-			"php artisan optimize"
-		],
+        "post-update-cmd": [
+            "php artisan clear-compiled",
+            "php artisan ide-helper:generate",
+            "php artisan optimize"
+        ],
 		"post-create-project-cmd": [
 			"php artisan key:generate"
 		]

@@ -120,6 +120,12 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 
+		'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
+
+		'Toin0u\Geocoder\GeocoderServiceProvider',
+
+		'Intouch\LaravelNewrelic\LaravelNewrelicServiceProvider',
+
 	),
 
 	/*
@@ -185,6 +191,9 @@ return array(
 		'URL'             => 'Illuminate\Support\Facades\URL',
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
+
+		'Newrelic'        => 'Intouch\LaravelNewrelic\Facades\Newrelic',
+		'Geocoder' => 'Toin0u\Geocoder\GeocoderFacade',
 
 	),
 
