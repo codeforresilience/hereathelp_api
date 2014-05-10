@@ -41,7 +41,7 @@ class Event extends BaseModel {
 	}
 
 	public function reporter() {
-		return $this->belongsTo('User');
+		return $this->belongsTo('User', 'user_id');
 	}
 
 	public function parseLocationName() {

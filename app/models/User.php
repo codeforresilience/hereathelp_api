@@ -41,7 +41,7 @@ class User extends BaseModel implements UserInterface, RemindableInterface {
 	 *
 	 * @var array
 	 */
-	protected $hidden = array('password');
+	protected $hidden = array('password', 'deleted_at');
 
 	protected $softDelete = true;
 
