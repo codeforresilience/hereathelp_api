@@ -22,9 +22,13 @@ use Illuminate\Auth\Reminders\RemindableInterface;
  * @property \Carbon\Carbon $deleted_at
  * @property-read \Illuminate\Database\Eloquent\Collection|\Message[] $messages
  */
+
+
+use Zizaco\Entrust\HasRole;
+
 class User extends Eloquent implements UserInterface, RemindableInterface {
 	use HasRole;
-
+	
 	/**
 	 * The database table used by the model.
 	 *
