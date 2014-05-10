@@ -16,12 +16,14 @@ Route::get('/', function()
 	return View::make('hello');
 });
 
-Route::group(array('prefix' => 'api/v1', 'before' => 'auth.basic'), function()
+Route::group(array('prefix' => 'api/v1'), function()
 {
-	Route::resource('categories', 'CategoriesController');
-	Route::resource('events', 'EventsController');
-	Route::resource('messages', 'MessagesController');
-	Route::resource('needs', 'NeedsController');
-	Route::resource('users', 'UsersController');
+	Route::group(array('before' => 'auth.basic'), function() {
+		Route::resource('categories', 'CategoriesController');
+		Route::resource('events', 'EventsController');
+		Route::resource('messages', 'MessagesController');
+		Route::resource('needs', 'NeedsController');
+		Route::resource('users', 'UsersController');
+	});
 });
 
