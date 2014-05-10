@@ -10,18 +10,9 @@ class CategoriesController extends \BaseController {
 	 */
 	public function index()
 	{
-		//
-	}
+		$categories = Category::all();
 
-	/**
-	 * Show the form for creating a new resource.
-	 * GET /categories/create
-	 *
-	 * @return Response
-	 */
-	public function create()
-	{
-		//
+		return $categories;
 	}
 
 	/**
@@ -32,7 +23,15 @@ class CategoriesController extends \BaseController {
 	 */
 	public function store()
 	{
-		//
+		$category = new Category();
+
+		$input = Input::all();
+
+		$category->slug = $input['slug'];
+		$category->description = $input['description'];
+		$category->title = $input['title'];
+
+		$category->save();
 	}
 
 	/**
@@ -44,19 +43,9 @@ class CategoriesController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		//
-	}
+		$category = Category::find($id);
 
-	/**
-	 * Show the form for editing the specified resource.
-	 * GET /categories/{id}/edit
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function edit($id)
-	{
-		//
+		return $category;
 	}
 
 	/**
@@ -68,7 +57,15 @@ class CategoriesController extends \BaseController {
 	 */
 	public function update($id)
 	{
-		//
+		$category = Category::find($id);
+
+		$input = Input::all();
+
+		$category->slug = $input['slug'];
+		$category->description = $input['description'];
+		$category->title = $input['title'];
+
+		$category->save();
 	}
 
 	/**
@@ -80,7 +77,7 @@ class CategoriesController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		//
+		Category::destroy($id);
 	}
 
 }

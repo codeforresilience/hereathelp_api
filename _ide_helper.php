@@ -5102,7 +5102,7 @@ namespace {
 		 }
 
 	}
-	class Event extends \Illuminate\Support\Facades\Event{
+	class Events extends \Illuminate\Support\Facades\Event{
 		/**
 		 * Create a new event dispatcher instance.
 		 *

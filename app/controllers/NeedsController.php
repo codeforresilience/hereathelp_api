@@ -10,18 +10,9 @@ class NeedsController extends \BaseController {
 	 */
 	public function index()
 	{
-		//
-	}
+		$needs = Need::all();
 
-	/**
-	 * Show the form for creating a new resource.
-	 * GET /needs/create
-	 *
-	 * @return Response
-	 */
-	public function create()
-	{
-		//
+		return $needs;
 	}
 
 	/**
@@ -32,7 +23,15 @@ class NeedsController extends \BaseController {
 	 */
 	public function store()
 	{
-		//
+		$need = new Need();
+
+		$input = Input::all();
+
+		$need->slug = $input['slug'];
+		$need->description = $input['description'];
+		$need->title = $input['title'];
+
+		$need->save();
 	}
 
 	/**
@@ -44,19 +43,9 @@ class NeedsController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		//
-	}
+		$need = Need::find($id);
 
-	/**
-	 * Show the form for editing the specified resource.
-	 * GET /needs/{id}/edit
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function edit($id)
-	{
-		//
+		return $need;
 	}
 
 	/**
@@ -68,7 +57,15 @@ class NeedsController extends \BaseController {
 	 */
 	public function update($id)
 	{
-		//
+		$need = Need::find($id);
+
+		$input = Input::all();
+
+		$need->slug = $input['slug'];
+		$need->description = $input['description'];
+		$need->title = $input['title'];
+
+		$need->save();
 	}
 
 	/**
@@ -80,7 +77,7 @@ class NeedsController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		//
+		Need::destroy($id);
 	}
 
 }

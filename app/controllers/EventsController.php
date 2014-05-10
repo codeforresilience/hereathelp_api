@@ -10,18 +10,9 @@ class EventsController extends \BaseController {
 	 */
 	public function index()
 	{
-		//
-	}
+		$events = Event::get();
 
-	/**
-	 * Show the form for creating a new resource.
-	 * GET /events/create
-	 *
-	 * @return Response
-	 */
-	public function create()
-	{
-		//
+		return $events;
 	}
 
 	/**
@@ -32,7 +23,18 @@ class EventsController extends \BaseController {
 	 */
 	public function store()
 	{
-		//
+		$event = new Event();
+
+		$input = Input::all();
+
+		$event->category_id = $input['category_id'];
+		$event->est_alive = $input['est_alive'];
+		$event->est_dead = $input['est_dead'];
+		$event->location = $input['location'];
+		$event->geobounds = $input['geobounds'];
+
+		$event->save();
+
 	}
 
 	/**
@@ -44,20 +46,11 @@ class EventsController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		//
+		$event = Event::find($id);
+
+		return $event;
 	}
 
-	/**
-	 * Show the form for editing the specified resource.
-	 * GET /events/{id}/edit
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function edit($id)
-	{
-		//
-	}
 
 	/**
 	 * Update the specified resource in storage.
@@ -68,7 +61,17 @@ class EventsController extends \BaseController {
 	 */
 	public function update($id)
 	{
-		//
+		$event = new Event($id);
+
+		$input = Input::all();
+
+		$event->category_id = $input['category_id'];
+		$event->est_alive = $input['est_alive'];
+		$event->est_dead = $input['est_dead'];
+		$event->location = $input['location'];
+		$event->geobounds = $input['geobounds'];
+
+		$event->save();
 	}
 
 	/**
@@ -80,7 +83,7 @@ class EventsController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		//
+		Event::destroy($id);
 	}
 
 }

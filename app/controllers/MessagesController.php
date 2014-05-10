@@ -10,18 +10,9 @@ class MessagesController extends \BaseController {
 	 */
 	public function index()
 	{
-		//
-	}
+		$messages = Message::all();
 
-	/**
-	 * Show the form for creating a new resource.
-	 * GET /messages/create
-	 *
-	 * @return Response
-	 */
-	public function create()
-	{
-		//
+		return $messages;
 	}
 
 	/**
@@ -32,7 +23,15 @@ class MessagesController extends \BaseController {
 	 */
 	public function store()
 	{
-		//
+		$message = new Message();
+
+		$input = Input::all();
+
+		$message->message = $input['message'];
+		$message->user_id = $input['user_id'];
+		$message->event_id = $input['event_id'];
+
+		$message->save();
 	}
 
 	/**
@@ -44,19 +43,9 @@ class MessagesController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		//
-	}
+		$message = Message::find($id);
 
-	/**
-	 * Show the form for editing the specified resource.
-	 * GET /messages/{id}/edit
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function edit($id)
-	{
-		//
+		return $message;
 	}
 
 	/**
@@ -68,7 +57,15 @@ class MessagesController extends \BaseController {
 	 */
 	public function update($id)
 	{
-		//
+		$message = new Message($id);
+
+		$input = Input::all();
+
+		$message->message = $input['message'];
+		$message->user_id = $input['user_id'];
+		$message->event_id = $input['event_id'];
+
+		$message->save();
 	}
 
 	/**
@@ -80,7 +77,7 @@ class MessagesController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		//
+		Message::destroy($id);
 	}
 
 }
