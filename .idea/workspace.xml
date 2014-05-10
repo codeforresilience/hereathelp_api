@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b300733d-d9e4-42af-ab20-9a84be9f5a5d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/AssignedRole.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/database/seeds/AssignedRoleTableSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/migrations/2014_05_09_153745_create_tables.php" afterPath="$PROJECT_DIR$/app/database/migrations/2014_05_09_153745_create_tables.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/seeds/DatabaseSeeder.php" afterPath="$PROJECT_DIR$/app/database/seeds/DatabaseSeeder.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Event.php" afterPath="$PROJECT_DIR$/app/models/Event.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/seeds/EventTableSeeder.php" afterPath="$PROJECT_DIR$/app/database/seeds/EventTableSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/EventsController.php" afterPath="$PROJECT_DIR$/app/controllers/EventsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Need.php" afterPath="$PROJECT_DIR$/app/models/Need.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Provision.php" afterPath="$PROJECT_DIR$/app/models/Provision.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/seeds/RoleTableSeeder.php" afterPath="$PROJECT_DIR$/app/database/seeds/RoleTableSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/seeds/UserTableSeeder.php" afterPath="$PROJECT_DIR$/app/database/seeds/UserTableSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db_schema_with_data.sql" afterPath="$PROJECT_DIR$/db_schema_with_data.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/User.php" afterPath="$PROJECT_DIR$/app/models/User.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="hereathelp_api.iws" />
@@ -36,96 +26,99 @@
     <favorites_list name="hereathelp_api" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="UserTableSeeder.php" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/database/seeds/UserTableSeeder.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="21" column="14" selection-start="467" selection-end="467" vertical-scroll-proportion="0.42215088" vertical-offset="52" max-vertical-offset="1140">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="EventTableSeeder.php" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/database/seeds/EventTableSeeder.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="44" column="29" selection-start="1214" selection-end="1214" vertical-scroll-proportion="-14.083333" vertical-offset="322" max-vertical-offset="945">
-                  <folding>
-                    <element signature="e#6#92#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="RoleTableSeeder.php" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/database/seeds/RoleTableSeeder.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="16" column="13" selection-start="335" selection-end="335" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="420">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="2014_05_09_153745_create_tables.php" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_05_09_153745_create_tables.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="75" column="42" selection-start="1850" selection-end="1850" vertical-scroll-proportion="-11.291667" vertical-offset="779" max-vertical-offset="2265">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="AssignedRoleTableSeeder.php" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/database/seeds/AssignedRoleTableSeeder.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="39" column="1" selection-start="499" selection-end="499" vertical-scroll-proportion="-23.833334" vertical-offset="13" max-vertical-offset="675">
-                  <folding>
-                    <element signature="e#6#92#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="CategoryTableSeeder.php" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/database/seeds/CategoryTableSeeder.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="69" column="28" selection-start="1254" selection-end="1254" vertical-scroll-proportion="-39.083332" vertical-offset="97" max-vertical-offset="1440">
-                  <folding>
-                    <element signature="e#6#93#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="DatabaseSeeder.php" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/database/seeds/DatabaseSeeder.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="14" column="8" selection-start="158" selection-end="158" vertical-scroll-proportion="0.26785713" vertical-offset="0" max-vertical-offset="560">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="AssignedRole.php" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/models/AssignedRole.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="10" column="1" selection-start="162" selection-end="162" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="240">
-                  <folding>
-                    <element signature="e#6#92#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="EventTableSeeder.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/database/seeds/EventTableSeeder.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="44" column="29" selection-start="1214" selection-end="1214" vertical-scroll-proportion="-14.083333" vertical-offset="322" max-vertical-offset="945">
+              <folding>
+                <element signature="e#6#92#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RoleTableSeeder.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/database/seeds/RoleTableSeeder.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="13" selection-start="335" selection-end="335" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="420">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2014_05_09_153745_create_tables.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_05_09_153745_create_tables.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="75" column="42" selection-start="1850" selection-end="1850" vertical-scroll-proportion="-11.291667" vertical-offset="779" max-vertical-offset="2235">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AssignedRoleTableSeeder.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/database/seeds/AssignedRoleTableSeeder.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="1" selection-start="499" selection-end="499" vertical-scroll-proportion="-23.833334" vertical-offset="13" max-vertical-offset="675">
+              <folding>
+                <element signature="e#6#92#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CategoryTableSeeder.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/database/seeds/CategoryTableSeeder.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="69" column="28" selection-start="1254" selection-end="1254" vertical-scroll-proportion="-22.083334" vertical-offset="505" max-vertical-offset="1440">
+              <folding>
+                <element signature="e#6#93#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="113" column="39" selection-start="2127" selection-end="2127" vertical-scroll-proportion="-38.208332" vertical-offset="268" max-vertical-offset="1320">
+              <folding>
+                <element signature="e#94#651#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Event.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/Event.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="32" selection-start="903" selection-end="903" vertical-scroll-proportion="0.5232558" vertical-offset="0" max-vertical-offset="602">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Message.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/Message.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="5" selection-start="407" selection-end="407" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="285">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AssignedRole.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/AssignedRole.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="1" selection-start="162" selection-end="162" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="240">
+              <folding>
+                <element signature="e#6#92#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -156,7 +149,6 @@
         <option value="$PROJECT_DIR$/app/models/Role.php" />
         <option value="$PROJECT_DIR$/app/models/Permission.php" />
         <option value="$PROJECT_DIR$/app/config/app.php" />
-        <option value="$PROJECT_DIR$/app/models/User.php" />
         <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
@@ -166,7 +158,6 @@
         <option value="$PROJECT_DIR$/app/controllers/EventsController.php" />
         <option value="$PROJECT_DIR$/app/models/Need.php" />
         <option value="$PROJECT_DIR$/app/models/Provision.php" />
-        <option value="$PROJECT_DIR$/app/models/Event.php" />
         <option value="$PROJECT_DIR$/app/database/seeds/UserTableSeeder.php" />
         <option value="$PROJECT_DIR$/app/database/seeds/EventTableSeeder.php" />
         <option value="$PROJECT_DIR$/app/database/seeds/RoleTableSeeder.php" />
@@ -174,6 +165,8 @@
         <option value="$PROJECT_DIR$/app/models/AssignedRole.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2014_05_09_153745_create_tables.php" />
         <option value="$PROJECT_DIR$/app/database/seeds/DatabaseSeeder.php" />
+        <option value="$PROJECT_DIR$/app/models/User.php" />
+        <option value="$PROJECT_DIR$/app/models/Event.php" />
       </list>
     </option>
   </component>
@@ -477,7 +470,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1374" height="746" extended-state="6" />
+    <frame x="-4" y="-4" width="1374" height="746" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -692,13 +685,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Message.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="4" selection-start="313" selection-end="342" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="285">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Role.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="1" selection-start="75" selection-end="75" vertical-scroll-proportion="0.16853933" vertical-offset="0" max-vertical-offset="623">
@@ -736,13 +722,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="30" selection-start="387" selection-end="387" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="1275">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="5" selection-start="623" selection-end="623" vertical-scroll-proportion="54.375" vertical-offset="1620" max-vertical-offset="3180">
@@ -768,7 +747,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="6" selection-start="148" selection-end="148" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="975">
           <folding>
-            <element signature="e#57#144#0" expanded="true" />
+            <element signature="e#57#144#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -784,10 +763,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="5" selection-start="350" selection-end="350" vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="1335">
           <folding>
-            <element signature="e#58#146#0" expanded="true" />
-            <element signature="e#225#322#0" expanded="true" />
-            <element signature="e#642#753#0" expanded="true" />
-            <element signature="e#837#958#0" expanded="true" />
+            <element signature="e#58#146#0" expanded="false" />
+            <element signature="e#225#322#0" expanded="false" />
+            <element signature="e#642#753#0" expanded="false" />
+            <element signature="e#837#958#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -819,7 +798,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="0" selection-start="271" selection-end="271" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="405">
           <folding>
-            <element signature="e#6#210#0" expanded="true" />
+            <element signature="e#6#210#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -831,9 +810,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Event.php">
+    <entry file="file://$PROJECT_DIR$/app/database/seeds/UserTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="632" selection-end="632" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="435">
+        <state line="21" column="14" selection-start="467" selection-end="467" vertical-scroll-proportion="0.42215088" vertical-offset="52" max-vertical-offset="1140">
           <folding />
         </state>
       </provider>
@@ -841,15 +820,6 @@
     <entry file="file://$PROJECT_DIR$/app/database/seeds/EventTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="29" selection-start="1214" selection-end="1214" vertical-scroll-proportion="-14.083333" vertical-offset="322" max-vertical-offset="945">
-          <folding>
-            <element signature="e#6#92#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/AssignedRole.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="1" selection-start="162" selection-end="162" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="240">
           <folding>
             <element signature="e#6#92#0" expanded="true" />
           </folding>
@@ -879,25 +849,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/seeds/CategoryTableSeeder.php">
+    <entry file="file://$PROJECT_DIR$/app/models/AssignedRole.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="28" selection-start="1254" selection-end="1254" vertical-scroll-proportion="-39.083332" vertical-offset="97" max-vertical-offset="1440">
+        <state line="10" column="1" selection-start="162" selection-end="162" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="240">
           <folding>
-            <element signature="e#6#93#0" expanded="true" />
+            <element signature="e#6#92#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/database/seeds/DatabaseSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="8" selection-start="158" selection-end="158" vertical-scroll-proportion="0.26785713" vertical-offset="0" max-vertical-offset="435">
+        <state line="19" column="0" selection-start="342" selection-end="342" vertical-scroll-proportion="0.37375414" vertical-offset="0" max-vertical-offset="602">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/seeds/UserTableSeeder.php">
+    <entry file="file://$PROJECT_DIR$/app/database/seeds/CategoryTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="14" selection-start="467" selection-end="467" vertical-scroll-proportion="0.42215088" vertical-offset="52" max-vertical-offset="1140">
+        <state line="69" column="28" selection-start="1254" selection-end="1254" vertical-scroll-proportion="-22.083334" vertical-offset="505" max-vertical-offset="1440">
+          <folding>
+            <element signature="e#6#93#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Message.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="5" selection-start="407" selection-end="407" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="285">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="39" selection-start="2127" selection-end="2127" vertical-scroll-proportion="-38.208332" vertical-offset="268" max-vertical-offset="1320">
+          <folding>
+            <element signature="e#94#651#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Event.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="32" selection-start="903" selection-end="903" vertical-scroll-proportion="0.5232558" vertical-offset="0" max-vertical-offset="602">
           <folding />
         </state>
       </provider>

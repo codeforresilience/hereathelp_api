@@ -37,6 +37,6 @@ class Event extends Eloquent {
 	}
 
 	public function reporter() {
-		return $this->hasOne('User');
+		return $this->belongsTo('User');
 	}
 }
