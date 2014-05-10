@@ -13153,5 +13153,176 @@ namespace {
 		 }
 
 	}
+	class Entrust extends \Zizaco\Entrust\EntrustFacade{
+		/**
+		 * Create a new confide instance.
+		 *
+		 * @param Illuminate\Foundation\Application  $app
+		 * @return void
+		 * @static 
+		 */
+		 public static function __construct($app){
+			//Method inherited from \Zizaco\Entrust\Entrust
+			 \Zizaco\Entrust\Entrust::__construct($app);
+		 }
+
+		/**
+		 * Checks if the current user has a Role by its name
+		 *
+		 * @param string $name Role name.
+		 * @access public
+		 * @return boolean
+		 * @static 
+		 */
+		 public static function hasRole($permission){
+			//Method inherited from \Zizaco\Entrust\Entrust
+			return \Zizaco\Entrust\Entrust::hasRole($permission);
+		 }
+
+		/**
+		 * Check if the current user has a permission by its name
+		 *
+		 * @param string $permission Permission string.
+		 * @access public
+		 * @return boolean
+		 * @static 
+		 */
+		 public static function can($permission){
+			//Method inherited from \Zizaco\Entrust\Entrust
+			return \Zizaco\Entrust\Entrust::can($permission);
+		 }
+
+		/**
+		 * Get the currently authenticated user or null.
+		 *
+		 * @access public
+		 * @return Illuminate\Auth\UserInterface|null
+		 * @static 
+		 */
+		 public static function user(){
+			//Method inherited from \Zizaco\Entrust\Entrust
+			return \Zizaco\Entrust\Entrust::user();
+		 }
+
+		/**
+		 * Filters a route for the name Role. If the third parameter
+		 * is null then return 403. Overwise the $result is returned
+		 *
+		 * @param string $route  Route pattern. i.e: "admin/*"
+		 * @param array|string $roles   The role(s) needed.
+		 * @param mixed $result i.e: Redirect::to('/')
+		 * @param bool $cumulative Must have all roles.
+		 * @access public
+		 * @return void
+		 * @static 
+		 */
+		 public static function routeNeedsRole($route, $roles, $result = null, $cumulative = true){
+			//Method inherited from \Zizaco\Entrust\Entrust
+			 \Zizaco\Entrust\Entrust::routeNeedsRole($route, $roles, $result, $cumulative);
+		 }
+
+		/**
+		 * Filters a route for the permission. If the third parameter
+		 * is null then return 403. Overwise the $result is returned
+		 *
+		 * @param string $route  Route pattern. i.e: "admin/*"
+		 * @param array|string $permissions   The permission needed.
+		 * @param mixed  $result i.e: Redirect::to('/')
+		 * @param bool $cumulative Must have all permissions
+		 * @access public
+		 * @return void
+		 * @static 
+		 */
+		 public static function routeNeedsPermission($route, $permissions, $result = null, $cumulative = true){
+			//Method inherited from \Zizaco\Entrust\Entrust
+			 \Zizaco\Entrust\Entrust::routeNeedsPermission($route, $permissions, $result, $cumulative);
+		 }
+
+		/**
+		 * Filters a route for the permission. If the third parameter
+		 * is null then return 403. Overwise the $result is returned
+		 *
+		 * @param string $route  Route pattern. i.e: "admin/*"
+		 * @param array|string $roles   The role(s) needed.
+		 * @param array|string $permissions   The permission needed.
+		 * @param mixed  $result i.e: Redirect::to('/')
+		 * @param bool $cumulative Must have all permissions
+		 * @access public
+		 * @return void
+		 * @static 
+		 */
+		 public static function routeNeedsRoleOrPermission($route, $roles, $permissions, $result = null, $cumulative = false){
+			//Method inherited from \Zizaco\Entrust\Entrust
+			 \Zizaco\Entrust\Entrust::routeNeedsRoleOrPermission($route, $roles, $permissions, $result, $cumulative);
+		 }
+
+	}
+	class ApiHandler extends \Marcelgwerder\ApiHandler\Facades\ApiHandler{
+		/**
+		 * Return a new Result object for a single dataset
+		 *
+		 * @param mixed  							$queryBuilder  	Some kind of query builder instance
+		 * @param array|integer 					$identification Identification of the dataset to work with
+		 * @param array|boolean 					$queryParams    The parameters used for parsing
+		 * @return Marcelgwerder\ApiHandler\Result  				Result object that provides getter methods
+		 * @static 
+		 */
+		 public static function parseSingle($queryBuilder, $identification, $queryParams = false){
+			//Method inherited from \Marcelgwerder\ApiHandler\ApiHandler
+			return \Marcelgwerder\ApiHandler\ApiHandler::parseSingle($queryBuilder, $identification, $queryParams);
+		 }
+
+		/**
+		 * Return a new Result object for multiple datasets
+		 *
+		 * @param mixed  							$queryBuilder          Some kind of query builder instance
+		 * @param array   							$fullTextSearchColumns Columns to search in fulltext search
+		 * @param array|boolean 					$queryParams           A list of query parameter
+		 * @return Marcelgwerder\ApiHandler\Result
+		 * @static 
+		 */
+		 public static function parseMultiple($queryBuilder, $fullTextSearchColumns = array(), $queryParams = false){
+			//Method inherited from \Marcelgwerder\ApiHandler\ApiHandler
+			return \Marcelgwerder\ApiHandler\ApiHandler::parseMultiple($queryBuilder, $fullTextSearchColumns, $queryParams);
+		 }
+
+		/**
+		 * Return an error response or throw an exception if debug mode is on
+		 * and error is unknown
+		 *
+		 * @param Exception|integer 	$error   Exception object or an error code
+		 * @param string 				$display A message which can be shown to an enduser
+		 * @param array  				$headers HTTP headers
+		 * @return Illuminate\Http\JsonResponse
+		 * @static 
+		 */
+		 public static function setInputHandler($input){
+			//Method inherited from \Marcelgwerder\ApiHandler\ApiHandler
+			return \Marcelgwerder\ApiHandler\ApiHandler::setInputHandler($input);
+		 }
+
+		/**
+		 * 
+		 *
+		 * @static 
+		 */
+		 public static function setConfigHandler($config){
+			//Method inherited from \Marcelgwerder\ApiHandler\ApiHandler
+			 \Marcelgwerder\ApiHandler\ApiHandler::setConfigHandler($config);
+		 }
+
+		/**
+		 * 
+		 *
+		 * @static 
+		 */
+		 public static function setResponseHandler($response){
+			//Method inherited from \Marcelgwerder\ApiHandler\ApiHandler
+			 \Marcelgwerder\ApiHandler\ApiHandler::setResponseHandler($response);
+		 }
+
+	}
+	class ApiHandlerException extends \Marcelgwerder\ApiHandler\ApiHandlerException{
+	}
 }
 

@@ -8,7 +8,9 @@ $baseDir = dirname($vendorDir);
 return array(
     'phpDocumentor' => array($vendorDir . '/phpdocumentor/reflection-docblock/src'),
     'dflydev\\markdown' => array($vendorDir . '/dflydev/markdown/src'),
+    'Zizaco\\Entrust' => array($vendorDir . '/zizaco/entrust/src'),
     'Whoops' => array($vendorDir . '/filp/whoops/src'),
+    'Way\\Generators' => array($vendorDir . '/way/generators/src'),
     'Toin0u\\Geocoder' => array($vendorDir . '/toin0u/geocoder-laravel/src'),
     'System' => array($vendorDir . '/phpseclib/phpseclib/phpseclib'),
     'Symfony\\Component\\Translation\\' => array($vendorDir . '/symfony/translation'),
@@ -34,6 +36,8 @@ return array(
     'Normalizer' => array($vendorDir . '/patchwork/utf8/class'),
     'Net' => array($vendorDir . '/phpseclib/phpseclib/phpseclib'),
     'Math' => array($vendorDir . '/phpseclib/phpseclib/phpseclib'),
+    'Marcelgwerder\\ApiHandler\\' => array($vendorDir . '/marcelgwerder/laravel-api-handler/src'),
+    'LaravelBook\\Ardent' => array($vendorDir . '/laravelbook/ardent/src'),
     'Jeremeamia\\SuperClosure' => array($vendorDir . '/jeremeamia/SuperClosure/src'),
     'Intouch\\Newrelic' => array($vendorDir . '/intouch/newrelic/src'),
     'Intouch\\LaravelNewrelic' => array($vendorDir . '/intouch/laravel-newrelic/src'),
@@ -52,4 +56,5 @@ return array(
     'Carbon' => array($vendorDir . '/nesbot/carbon/src'),
     'Boris' => array($vendorDir . '/d11wtq/boris/lib'),
     'Barryvdh\\LaravelIdeHelper' => array($vendorDir . '/barryvdh/laravel-ide-helper/src'),
+    'Barryvdh\\Cors' => array($vendorDir . '/barryvdh/laravel-cors/src'),
 );

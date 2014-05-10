@@ -48,6 +48,9 @@ class NeedTableSeeder extends Seeder {
 			],
 		];
 
-		Need::create($data);
+		foreach ($data as $d)
+		{
+			Need::create($d);
+		}
 	}
 }

@@ -17,7 +17,7 @@ class HomeController extends BaseController {
 
 	public function showWelcome()
 	{
-		return Redirect::to('http://pup-progguild.github.io/');
+		return Redirect::to('http://pup-progguild.github.io/hereathelp_api');
 	}
 
 }

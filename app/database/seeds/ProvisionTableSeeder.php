@@ -1335,6 +1335,9 @@ class ProvisionTableSeeder extends Seeder {
 
 		];
 
-		Provision::create($data);
+		foreach ($data as $d)
+		{
+			Provision::create($d);
+		}
 	}
 }

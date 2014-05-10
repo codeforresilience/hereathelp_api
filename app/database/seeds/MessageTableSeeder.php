@@ -18,6 +18,9 @@ class MessageTableSeeder extends Seeder {
 			],
 		];
 
-		Event::create($data);
+		foreach ($data as $d)
+		{
+			Message::create($d);
+		}
 	}
 }

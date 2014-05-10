@@ -43,6 +43,9 @@ class UserTableSeeder extends Seeder {
 			]
 		];
 
-		User::create($data);
+		foreach ($data as $d)
+		{
+			User::create($d);
+		}
 	}
 }

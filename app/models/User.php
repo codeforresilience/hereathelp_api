@@ -3,7 +3,27 @@
 use Illuminate\Auth\UserInterface;
 use Illuminate\Auth\Reminders\RemindableInterface;
 
+/**
+ * User
+ *
+ * @property integer $id
+ * @property string $username
+ * @property string $password
+ * @property string $email
+ * @property string $confirmation_code
+ * @property boolean $confirmed
+ * @property string $first_name
+ * @property string $middle_name
+ * @property string $last_name
+ * @property string $position
+ * @property string $contacts
+ * @property \Carbon\Carbon $created_at
+ * @property \Carbon\Carbon $updated_at
+ * @property \Carbon\Carbon $deleted_at
+ * @property-read \Illuminate\Database\Eloquent\Collection|\Message[] $messages
+ */
 class User extends Eloquent implements UserInterface, RemindableInterface {
+	use HasRole;
 
 	/**
 	 * The database table used by the model.
@@ -18,6 +38,8 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	 * @var array
 	 */
 	protected $hidden = array('password');
+
+	protected $softDelete = true;
 
 	/**
 	 * Get the unique identifier for the user.
