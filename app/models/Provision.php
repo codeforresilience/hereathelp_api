@@ -19,5 +19,5 @@
 class Provision extends BaseModel {
 	protected $softDelete = true;
 
-	protected $hidden = ['deleted_at', 'event_id', 'need_id'];
+	protected $hidden = ['id', 'deleted_at', 'event_id', 'need_id'];
 }

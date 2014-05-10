@@ -18,7 +18,7 @@ Route::get('/', function()
 
 Route::group(array('prefix' => 'api/v1'), function()
 {
-	Route::group(array('before' => 'auth.basic'), function() {
+	Route::group(array(/*'before' => 'auth.basic'*/), function() {
 		Route::resource('categories', 'CategoriesController');
 		Route::resource('events', 'EventsController');
 		Route::resource('messages', 'MessagesController');
