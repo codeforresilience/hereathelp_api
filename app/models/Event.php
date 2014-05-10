@@ -19,14 +19,14 @@
  * @property-read \Category $category
  */
 
-class Event extends Eloquent {
+class Event extends BaseModel {
 	protected $softDelete = true;
 
 	protected $appends = ['parse_location_name'];
 
 	protected $hidden = ['deleted_at'];
 
-	protected $with = ['provisions', 'reporter'];
+	protected $with = ['needs', 'reporter'];
 
 	public function messages() {
 		return $this->hasMany('Message');
@@ -36,8 +36,8 @@ class Event extends Eloquent {
 		return $this->hasOne('Category');
 	}
 
-	public function provisions() {
-		return $this->hasMany('Provision');
+	public function needs() {
+		return $this->belongsToMany('Need', 'provisions');
 	}
 
 	public function reporter() {

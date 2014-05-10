@@ -16,8 +16,8 @@
  * @property-read \Event $event
  * @property-read \Illuminate\Database\Eloquent\Collection|\Need[] $needs
  */
-class Provision extends Eloquent {
+class Provision extends BaseModel {
 	protected $softDelete = true;
 
-	protected $hidden = ['deleted_at'];
+	protected $hidden = ['deleted_at', 'event_id', 'need_id'];
 }

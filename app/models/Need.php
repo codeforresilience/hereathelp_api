@@ -12,11 +12,14 @@
  * @property string $description
  */
 
-class Need extends Eloquent {
+class Need extends BaseModel {
 	public $timestamps = false;
 
-	public function provisions() {
-		return $this->belongsToMany('Provision');
-	}
+	protected $hidden = ['pivot'];
 
+	protected $with = ['provision'];
+
+	public function provision() {
+		return $this->hasOne('Provision');
+	}
 }

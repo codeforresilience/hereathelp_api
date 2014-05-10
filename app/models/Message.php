@@ -14,7 +14,7 @@
  * @property-read \Event $event
  */
 
-class Message extends Eloquent {
+class Message extends BaseModel {
 	protected $softDelete = true;
 
 	public function user() {

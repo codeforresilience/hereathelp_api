@@ -13,7 +13,7 @@
  * @property-read \Illuminate\Database\Eloquent\Collection|\Event[] $events
  */
 
-class Category extends Eloquent {
+class Category extends BaseModel {
 	public $timestamps = false;
 	public function events() {
 		return $this->belongsToMany('Event');

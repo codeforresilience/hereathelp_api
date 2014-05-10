@@ -6,6 +6,6 @@
  * Time: 3:53 PM
  */
 
-class AssignedRole extends Eloquent {
+class AssignedRole extends BaseModel {
 	public $timestamps = false;
 }
