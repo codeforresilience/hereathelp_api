@@ -1,8 +1,9 @@
-## Here@Help API
+[![Here@Help](https://raw.githubusercontent.com/pup-progguild/hereathelp_api/master/public/img/here_help_monochrome_long.png)]
+# Here@Help API
 
 Here@Help - for disaster mitigation and response! With awesomeness.
 
-### Documentation
+## Documentation
 
 Base API URL is
 
@@ -10,11 +11,11 @@ Base API URL is
 
 **NOTE**: You'll be redirected to this page if you access the Base API URL without any appended URIs
 
-### BuiltWith
+## BuiltWith
 
 - [Laravel PHP](https://github.com/laravel/laravel)
 
-### TechStack
+## TechStack
 
 - [PHP 5.4+](http://php.net)
 - [Nginx](http://nginx.org/)
