@@ -18,12 +18,4 @@
  */
 class Provision extends Eloquent {
 	protected $softDelete = true;
-
-	public function event() {
-		return $this->belongsTo('Event');
-	}
-
-	public function needs() {
-		return $this->hasMany('Need');
-	}
 }

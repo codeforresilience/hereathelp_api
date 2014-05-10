@@ -15,4 +15,8 @@
 class Need extends Eloquent {
 	public $timestamps = false;
 
+	public function provisions() {
+		return $this->belongsToMany('Provision');
+	}
+
 }

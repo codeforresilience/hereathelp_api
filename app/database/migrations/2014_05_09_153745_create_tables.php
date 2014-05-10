@@ -33,6 +33,7 @@ class CreateTables extends Migration {
 			$t->integer('est_alive');
 			$t->integer('est_dead');
 			$t->integer('category_id')->unsigned();
+			$t->integer('user_id')->unsigned();
 			$t->timestamps();
 			$t->softDeletes();
 		});
@@ -72,6 +73,7 @@ class CreateTables extends Migration {
 		{
 			$table->increments('id')->unsigned();
 			$table->string('name')->unique();
+			$table->string('description');
 			$table->timestamps();
 		});
 

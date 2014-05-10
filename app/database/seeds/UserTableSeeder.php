@@ -30,7 +30,6 @@ class UserTableSeeder extends Seeder {
 				'position' => 'Barangay Captain',
 				'contacts' => '09394813792'
 			],
-
 			[
 				'username' => 'engJEHneer',
 				'email' => 'tabing.jeremiah@gmail.com',
@@ -38,9 +37,30 @@ class UserTableSeeder extends Seeder {
 				'first_name' => 'Jeremiah',
 				'middle_name' => 'A',
 				'last_name' => 'Tabing',
-				'position' => 'Map Master',
+				'position' => 'Barangay Captain',
+				'contacts' => '09272276107'
+			],
+			[
+				'username' => 'ichi-san',
+				'email' => 'ichi-san@gmail.com',
+				'password' => Hash::make('MAILOLIWAIFUS'),
+				'first_name' => 'Ichi',
+				'middle_name' => 'Ichi',
+				'last_name' => 'San',
+				'position' => 'Barangay Captain',
+				'contacts' => '09272276107'
+			],
+			[
+				'username' => 'ni-san',
+				'email' => 'ni-san@gmail.com',
+				'password' => Hash::make('MAILOLIWAIFUS'),
+				'first_name' => 'Ni',
+				'middle_name' => 'Ni',
+				'last_name' => 'San',
+				'position' => 'Barangay Captain',
 				'contacts' => '09272276107'
 			]
+
 		];
 
 		foreach ($data as $d)

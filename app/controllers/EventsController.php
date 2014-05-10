@@ -84,6 +84,7 @@ class EventsController extends \BaseController {
 	public function destroy($id)
 	{
 		Event::destroy($id);
+		Provision::destroy(Provision::where('event_id','=',$id)->get(['id'])->toArray());
 	}
 
 }

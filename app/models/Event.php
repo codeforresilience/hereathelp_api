@@ -22,6 +22,7 @@
 class Event extends Eloquent {
 	protected $softDelete = true;
 
+	protected $with = ['provisions', 'reporter'];
 
 	public function messages() {
 		return $this->hasMany('Message');
@@ -29,5 +30,13 @@ class Event extends Eloquent {
 
 	public function category() {
 		return $this->hasOne('Category');
+	}
+
+	public function provisions() {
+		return $this->hasMany('Provision');
+	}
+
+	public function reporter() {
+		return $this->hasOne('User');
 	}
 }
