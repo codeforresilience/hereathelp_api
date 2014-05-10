@@ -2,6 +2,7 @@
 # Here@Help API
 [![Build Status](https://travis-ci.org/pup-progguild/hereathelp_api.svg?branch=master)](https://travis-ci.org/pup-progguild/hereathelp_api)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/pup-progguild/hereathelp_api/badges/quality-score.png?s=42b2367aae92059eb5e9dd10f20cbcc6088e9976)](https://scrutinizer-ci.com/g/pup-progguild/hereathelp_api/)
+[![Dependency Status](https://www.versioneye.com/user/projects/536e043014c158c2c2000024/badge.png)](https://www.versioneye.com/user/projects/536e043014c158c2c2000024)
 
 Here@Help - for disaster mitigation and response! With awesomeness.
 
