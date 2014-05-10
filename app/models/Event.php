@@ -22,6 +22,10 @@
 class Event extends Eloquent {
 	protected $softDelete = true;
 
+	protected $appends = ['parse_location_name'];
+
+	protected $hidden = ['deleted_at'];
+
 	protected $with = ['provisions', 'reporter'];
 
 	public function messages() {
@@ -38,5 +42,27 @@ class Event extends Eloquent {
 
 	public function reporter() {
 		return $this->belongsTo('User');
+	}
+
+	public function parseLocationName() {
+		$location = explode(',', $this->location);
+
+		$dumper = new \Geocoder\Dumper\GeoJsonDumper();
+
+		return $dumper->dump(Geocoder::reverse($location[0], $location[1]));
+	}
+
+	public function parseGeobounds() {
+		$geobounds = explode(';', $this->geobounds);
+
+		return $geobounds;
+	}
+
+	public function getParseLocationNameAttribute() {
+		return $this->parseLocationName();
+	}
+
+	public function getParseGeobounds() {
+		return $this->parseGeobounds();
 	}
 }

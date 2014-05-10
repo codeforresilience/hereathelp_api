@@ -18,4 +18,6 @@
  */
 class Provision extends Eloquent {
 	protected $softDelete = true;
+
+	protected $hidden = ['deleted_at'];
 }

@@ -6,6 +6,8 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'AssignedRole' => $baseDir . '/app/models/AssignedRole.php',
+    'AssignedRoleTableSeeder' => $baseDir . '/app/database/seeds/AssignedRoleTableSeeder.php',
     'Barryvdh\\Cors\\CorsListener' => $vendorDir . '/barryvdh/laravel-cors/src/Barryvdh/Cors/CorsListener.php',
     'Barryvdh\\Cors\\CorsMiddleware' => $vendorDir . '/barryvdh/laravel-cors/src/Barryvdh/Cors/CorsMiddleware.php',
     'Barryvdh\\Cors\\CorsServiceProvider' => $vendorDir . '/barryvdh/laravel-cors/src/Barryvdh/Cors/CorsServiceProvider.php',
@@ -1308,6 +1310,7 @@ return array(
     'Psr\\Log\\LoggerTrait' => $vendorDir . '/psr/log/Psr/Log/LoggerTrait.php',
     'Psr\\Log\\NullLogger' => $vendorDir . '/psr/log/Psr/Log/NullLogger.php',
     'Role' => $baseDir . '/app/models/Role.php',
+    'RoleTableSeeder' => $baseDir . '/app/database/seeds/RoleTableSeeder.php',
     'SessionHandlerInterface' => $vendorDir . '/symfony/http-foundation/Symfony/Component/HttpFoundation/Resources/stubs/SessionHandlerInterface.php',
     'Stack\\Builder' => $vendorDir . '/stack/builder/src/Stack/Builder.php',
     'Stack\\StackedHttpKernel' => $vendorDir . '/stack/builder/src/Stack/StackedHttpKernel.php',

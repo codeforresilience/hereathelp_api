@@ -1,5 +1,7 @@
 [![Here@Help](https://raw.githubusercontent.com/pup-progguild/hereathelp_api/master/public/img/here_help_monochrome_long.png)]
 # Here@Help API
+[![Build Status](https://travis-ci.org/pup-progguild/hereathelp_api.png)](https://travis-ci.org/pup-progguild/hereathelp_api)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/pup-progguild/hereathelp_api/badges/quality-score.png?s=42b2367aae92059eb5e9dd10f20cbcc6088e9976)](https://scrutinizer-ci.com/g/pup-progguild/hereathelp_api/)
 
 Here@Help - for disaster mitigation and response! With awesomeness.
 
