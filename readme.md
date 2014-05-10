@@ -6,7 +6,7 @@ Here@Help - for disaster mitigation and response! With awesomeness.
 
 Base API URL is
 
-* http://hereathelp.cloudapp.net/
+* http://hereathelp.cloudapp.net/api/v1
 
 **NOTE**: You'll be redirected to this page if you access the Base API URL without any appended URIs
 
