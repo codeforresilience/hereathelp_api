@@ -6,6 +6,8 @@
 
 Here@Help - for disaster mitigation and response! With awesomeness.
 
+An integrated solution for easy reporting and management of disaster situations using an open API. The project aims to help the government determine what the affected individuals by the disaster need and the locations where a disaster have been reported. Here@Help comprises of a reporting app [https://github.com/pup-progguild/hereathelp_client], a management app [https://github.com/pup-progguild/hereathelp_web], and an open API [https://github.com/pup-progguild/hereathelp_api] to serve its purpose.
+
 ## Documentation
 
 Base API URL is
